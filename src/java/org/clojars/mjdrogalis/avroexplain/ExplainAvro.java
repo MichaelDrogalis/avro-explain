@@ -18,9 +18,9 @@ public class ExplainAvro {
 
     static {
         require = Clojure.var("clojure.core", "require");
-        require.invoke(Clojure.read("io.mdrogalis.avro-explain.core"));
+        require.invoke(Clojure.read("org.clojars.mjdrogalis.avro-explain.core"));
 
-        explain = Clojure.var("io.mdrogalis.avro-explain.core", "explain");
+        explain = Clojure.var("org.clojars.mjdrogalis.avro-explain.core", "explain");
     }
 
     public static Explanation explain(Schema schema, String data) {

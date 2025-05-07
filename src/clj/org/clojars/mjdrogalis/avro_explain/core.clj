@@ -3,7 +3,7 @@
             [clojure.set :as cset]
             [cheshire.core :as json])
   (:import [org.apache.avro Schema]
-           [io.mdrogalis.avroexplain Explanation]))
+           [org.clojars.mjdrogalis.avroexplain Explanation]))
 
 (defn schema->edn [^Schema schema]
   (json/parse-string (.toString schema)))
