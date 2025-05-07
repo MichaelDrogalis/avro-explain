@@ -15,7 +15,7 @@ These error messages lack context. Namely, you don't know:
 - Where the mismatch is in your schema
 - What that means in plain English
 
-avro-explain is a tiny Java library with only one method: `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
+avro-explain is a tiny Java library with only one method: `org.clojars.mjdrogalis.avroexplain.ExplainAvro/explain()`.
 
 When you encounter an error with Avro, invoke `explain` and pass it your schema and data. `avro-explain` will do a depth-first traversal to intercept the error and return more context to help you understand what's going on.
 
@@ -25,13 +25,13 @@ Add the dependency to your project:
 
 ```xml
 <dependency>
-    <groupId>io.mdrogalis</groupId>
-    <artifactId>avro-explain</artifactId>
-    <version>0.1.0</version>
+  <groupId>org.clojars.mjdrogalis</groupId>
+  <artifactId>avro-explain</artifactId>
+  <version>0.1.0</version>
 </dependency>
 ```
 
-Then, invoke `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
+Then, invoke `org.clojars.mjdrogalis.avroexplain.ExplainAvro/explain()`.
 
 `explain` takes two arguments: a schema and a matching piece of data.
 
@@ -39,8 +39,8 @@ Then, invoke `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
 import org.apache.avro.Schema;
 import org.apache.avro.SchemaBuilder;
 
-import io.mdrogalis.avroexplain.ExplainAvro;
-import io.mdrogalis.avroexplain.Explanation;
+import org.clojars.mjdrogalis.avroexplain.ExplainAvro;
+import org.clojars.mjdrogalis.avroexplain.Explanation;
 
 import java.util.Map;
 import java.util.HashMap;
@@ -79,7 +79,7 @@ public class Runner {
 }
 ```
 
-`explain` will return a `io.mdrogalis.avroexplain.Explanation` object, which has a handful of getter methods to construct a better error message:
+`explain` will return a `org.clojars.mjdrogalis.avroexplain.Explanation` object, which has a handful of getter methods to construct a better error message:
 
 - reason: a type of problem encountered
 - root cause: a longer description of the problem

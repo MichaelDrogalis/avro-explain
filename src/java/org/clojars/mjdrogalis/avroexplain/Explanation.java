@@ -1,4 +1,4 @@
-package io.mdrogalis.avroexplain;
+package org.clojars.mjdrogalis.avroexplain;
 
 import java.util.List;
 import java.util.Map;

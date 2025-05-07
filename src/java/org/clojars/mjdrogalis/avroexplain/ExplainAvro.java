@@ -1,4 +1,4 @@
-package io.mdrogalis.avroexplain;
+package org.clojars.mjdrogalis.avroexplain;
 
 import java.util.List;
 import java.util.Map;
@@ -9,7 +9,7 @@ import clojure.lang.IFn;
 
 import org.apache.avro.Schema;
 
-import io.mdrogalis.avroexplain.Explanation;
+import org.clojars.mjdrogalis.avroexplain.Explanation;
 
 public class ExplainAvro {
 

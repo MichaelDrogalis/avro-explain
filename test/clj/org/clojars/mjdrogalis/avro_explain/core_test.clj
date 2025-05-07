@@ -1,9 +1,9 @@
-(ns io.mdrogalis.avro-explain.core-test
+(ns org.clojars.mjdrogalis.avro-explain.core-test
   (:require [clojure.test :refer :all]
             [cheshire.core :as json])
   (:import [org.apache.avro Schema]
-           [io.mdrogalis.avroexplain ExplainAvro]
-           [io.mdrogalis.avroexplain Explanation]
+           [org.clojars.mjdrogalis.avroexplain ExplainAvro]
+           [org.clojars.mjdrogalis.avroexplain Explanation]
            [io.confluent.kafka.schemaregistry.avro AvroSchema]))
 
 (defn ^Schema make-schema [schema]

@@ -1,4 +1,4 @@
-(ns io.mdrogalis.avro-explain.core
+(ns org.clojars.mjdrogalis.avro-explain.core
   (:require [clojure.string :as s]
             [clojure.set :as cset]
             [cheshire.core :as json])
