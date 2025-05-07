@@ -21,9 +21,21 @@ When you encounter an error with Avro, invoke `explain` and pass it your schema 
 
 ## Usage
 
-Add the dependency to your project:
+Add the Clojars repository to your project:
 
 ```xml
+<repositories>
+  <repository>
+    <id>clojars</id>
+    <url>https://repo.clojars.org/</url>
+  </repository>
+</repositories>
+```
+
+Then add the dependency:
+
+```xml
+
 <dependency>
   <groupId>org.clojars.mjdrogalis</groupId>
   <artifactId>avro-explain</artifactId>
