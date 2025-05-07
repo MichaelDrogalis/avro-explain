@@ -1,6 +1,6 @@
 # avro-explain
 
-avro-explain provides better Avro error messages, opened-source courtesy of [ShadowTraffic](https://shadowtraffic.io/).
+avro-explain provides better Avro error messages, open-sourced courtesy of [ShadowTraffic](https://shadowtraffic.io/).
 
 ![Example image](docs/example.jpeg)
 
