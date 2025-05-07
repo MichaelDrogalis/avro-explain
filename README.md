@@ -2,7 +2,7 @@
 
 avro-explain provides better Avro error messages.
 
-![Example image](/docs/example.jpeg)
+![Example image](docs/example.jpeg)
 
 ## Rationale
 
