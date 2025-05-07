@@ -121,6 +121,11 @@ Sub data: 12.5
 Data path: [durationSeconds]
 ```
 
+## Project status
+
+- This code is used in a production setting at [ShadowTraffic](https://shadowtraffic.io/)
+- Find a bug? Have an idea? I'm happily accepting pull requests/collaborators.
+
 ## License
 
 Copyright © 2025 Michael Drogalis
