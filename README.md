@@ -31,7 +31,7 @@ Add the dependency to your project:
 </dependency>
 ```
 
-Then, invoke the only public method in this API: `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
+Then, invoke `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
 
 `explain` takes two arguments: a schema and a matching piece of data.
 
@@ -79,6 +79,17 @@ public class Runner {
 }
 ```
 
+`explain` will return a `io.mdrogalis.avroexplain.Explanation` object, which has a handful of getter methods to construct a better error message:
+
+- reason: a type of problem encountered
+- root cause: a longer description of the problem
+- sub schema: the most specific part of your Avro schema that is mismatched with your data
+- schema path: a list of keys to navigate into your schema and produce the sub schema
+- sub data: the most specific part of your data that is mismatched with your schema
+- data path: a list of keys to navigate into your data and produce the sub data
+
+For example, printing out context for the above error, we see:
+
 ```
 Reason: missing-union-hint
 Root cause: your schema included a union, but your data didn't include a required hint for its concrete type. This StackOverflow thread describes how to provide the type hint: https://stackoverflow.com/q/27485580
@@ -87,7 +98,6 @@ Schema path: [fields, 2, type]
 Sub data: 12.5
 Data path: [durationSeconds]
 ```
-
 
 ## License
 
