@@ -2,9 +2,26 @@
 
 avro-explain provides better Avro error messages.
 
+![Example image](/docs/example.jpeg)
+
+## Rationale
+
+[Avro](https://avro.apache.org/) is a widely used serialization format, especially in the Apache Kafka ecosytem. Despite its prevalence, it can often produce cryptic errors when things go wrong, especially when used with Generic Data.
+
+For example, if you were to incorrectly serialized data against a deeply nested schema, you might see an error message such as: `Expected start-union. Got VALUE_NUMBER_INT`
+
+These error messages lack context. Namely, you don't know:
+- Where the error is in your data
+- Where the mismatch is in your schema
+- What that means in plain English
+
+avro-explain is a tiny Java library with only one method: `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
+
+When you encounter an error with Avro, invoke `explain` and pass it your schema and data. `avro-explain` will do a depth-first traversal to intercept the error and return more context to help you understand what's going on.
+
 ## Usage
 
-Add the depenency to your project:
+Add the dependency to your project:
 
 ```xml
 <dependency>
