@@ -6,13 +6,13 @@ avro-explain provides better Avro error messages.
 
 Some before/after examples:
 
-old | new
----------
-Expected int. Got VALUE_STRING | the data type you generated didn't match your schema. Expected type integer, but found type string.
-Unknown union branch not-a-type | expected union type hints #{"boolean" "int"}, but found hints #{"not-a-type"} that don't match.
-Expected record-start. Got VALUE_NUMBER_INT | the data you generated wasn't a map type to match the record schema.
-Expected start-union. Got END_OBJECT | this record is missing required field x. This StackOverflow answer describes required fields and defaults: https://stackoverflow.com/a/63176493
-Expected start-union. Got VALUE_STRING | your schema included a union, but your data didn't include a required hint for its concrete type. This StackOverflow thread describes how to provide the type hint: https://stackoverflow.com/q/27485580
+|old | new|
+|----|----|
+| Expected int. Got VALUE_STRING | the data type you generated didn't match your schema. Expected type integer, but found type string.|
+| Unknown union branch not-a-type | expected union type hints #{"boolean" "int"}, but found hints #{"not-a-type"} that don't match.|
+| Expected record-start. Got VALUE_NUMBER_INT | the data you generated wasn't a map type to match the record schema.|
+| Expected start-union. Got END_OBJECT | this record is missing required field x. This StackOverflow answer describes required fields and defaults: https://stackoverflow.com/a/63176493|
+| Expected start-union. Got VALUE_STRING | your schema included a union, but your data didn't include a required hint for its concrete type. This StackOverflow thread describes how to provide the type hint: https://stackoverflow.com/q/27485580|
 
 ## Rationale
 
