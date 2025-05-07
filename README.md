@@ -1,8 +1,22 @@
 # avro-explain
 
-A Clojure library designed to ... well, that part is up to you.
+avro-explain provides better Avro error messages.
 
 ## Usage
+
+Add the depenency to your project:
+
+```xml
+<dependency>
+    <groupId>io.mdrogalis</groupId>
+    <artifactId>avro-explain</artifactId>
+    <version>0.1.0</version>
+</dependency>
+```
+
+Then, invoke the only public method in this API: `io.mdrogalis.avroexplain.ExplainAvro/explain()`.
+
+`explain` takes two arguments: a schema and a matching piece of data.
 
 ```java
 import org.apache.avro.Schema;
@@ -56,6 +70,7 @@ Schema path: [fields, 2, type]
 Sub data: 12.5
 Data path: [durationSeconds]
 ```
+
 
 ## License
 
