@@ -12,6 +12,8 @@
   :java-source-paths ["src/java"]
   :test-paths ["test/clj"]
 
+  :javac-options ["-target" "1.8" "-source" "1.8"]
+
   :eftest {:fail-fast? true}
 
   :dependencies [[org.clojure/clojure "1.11.2"]
