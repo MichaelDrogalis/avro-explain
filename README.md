@@ -49,7 +49,7 @@ Then add the dependency:
 <dependency>
   <groupId>org.clojars.mjdrogalis</groupId>
   <artifactId>avro-explain</artifactId>
-  <version>0.1.0</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 
